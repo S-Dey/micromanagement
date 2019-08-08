@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+#content {
+    text-align: center;
+    width: 70%;
+}
+
+.button {
+  color: #494949 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 10px 5px;
+  border: 4px solid #494949 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  margin-top: 20px;
+}
+
+.button:hover {
+  color: black !important;
+  background: #7df0c0;
+  border-color: #3333 !important;
+  transition: all 0.4s ease 0s;
+}

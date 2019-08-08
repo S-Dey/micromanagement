@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Task Master</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Task Manager</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+    <h3 style="color:red;">{{ message }}</h3>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+    <div class="form">
+        <form action="/" method="POST">
+            <h4>What would you like to focus on?</h4>
+            <input type="text" name="focus" id="content"><br>
+            <h4>What is your location? (optional)</h4>
+            <input type="text" name="location" id="content"><br>
+            <h4>Do you want to add a summary to your task?(optional)</h4>
+            <input type="text" name="desc" id="content"><br>
+            <input type="submit" value="Start Task" class="button">
+        </form>
+    </div>
+</div>
+{% endblock %}
